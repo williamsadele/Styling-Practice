@@ -12,6 +12,7 @@
     --green: #00a97f;
     --breen: #82a3a3;
     --ash: #2c2e32;
+    --off-white: #f1edff;
 }
 body{
     font-family: 'Manrope', sans-serif;
@@ -46,6 +47,7 @@ a{
 }
 .hero{
     display:flex;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
     padding: 100px 80px;
@@ -118,7 +120,7 @@ a{
     gap: 16px;
     padding: 4px 8px;
     border-radius: 32px;
-    background: var(--white);
+    background: var(--off-white);
     border:1px solid var(--gray);
     width: 100%;
     max-width: 500px;
@@ -132,6 +134,7 @@ a{
 input{
     border:none;
     outline:none;
+    background:transparent;
 }
 .popular{
     margin-top: 32px;
@@ -145,4 +148,13 @@ input{
     font-weight: 400;
     font-size: 14px;
     padding: 4px 8px;
+}
+.phone-mockup{
+    width: 600px;
+    height: 500px;
+    background: var(--indigo);
+    border-radius: 32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
