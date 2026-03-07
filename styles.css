@@ -13,6 +13,7 @@
     --breen: #82a3a3;
     --ash: #2c2e32;
     --off-white: #f1edff;
+    --cream: #aba9bb;
 }
 body{
     font-family: 'Manrope', sans-serif;
@@ -58,10 +59,10 @@ a{
     align-items: flex-start; 
 }
 .hero-left h1{
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 800;
     color: var(--black);
-    max-width:400px;
+    max-width:600px;
     line-height:1.1;
     opacity: 0;
     transform: translateY(30px);
@@ -128,7 +129,7 @@ a{
 }
 .search-bar .material-symbols-outlined{
     color: var(--white);
-    background: var(--purple);
+    background: var(--indigo);
     border-radius:32px;
     padding: 8px;
 }
@@ -151,9 +152,13 @@ input{
     padding: 4px 8px;
 }
 .phone-mockup{
+    background-image: url("images/download (1).jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 600px;
     height: 500px;
-    background: var(--indigo);
+
     border-radius: 32px;
     display:flex;
     align-items:center;
@@ -191,15 +196,15 @@ section{
     display:flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 600px;
+    max-width: 800px;
 }
 .steps-header h2{
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 60px;
+    font-weight: 700;
     color: var(--black);
 }
 .steps-header h2 span{
-    color: var(--purple);
+    color: var(--indigo);
 }
 .steps{
     display:flex;
@@ -209,14 +214,17 @@ section{
 .step{
     background: var(--off-white);
     border-radius: 16px;
-    padding: 16px;
+    padding: 32px;
     flex:1;
     display:flex;
     flex-direction: column;
     align-items:flex-start;
 }
 .step h3{
-    padding: 16px 0px 8px;
+    font-size:24px;
+    font-weight: 700;
+    color: var(--black);
+    padding: 24px 0px 8px;
 }
 .step p{
     color: var(--gray);
@@ -224,4 +232,113 @@ section{
 }
 .step svg{
     color: var(--purple);
+    width: 32px;
+    height: 32px;
+}
+.pricing-header{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pricing-header h2{
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--black);
+    max-width: 600px;
+    line-height: 1.1em;
+}
+.pricing-header h2 span{
+    color: var(--indigo);
+}
+.pricing-header p {
+    max-width:600px;
+}
+.pricing-cards{
+    display: flex;
+    gap: 16px;
+    padding: 32px 0px;
+}
+.pricing-cards ul{
+    list-style:none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: var(--off-white);
+    padding: 16px;
+    border-radius: 16px;
+    min-width: 400px;
+    min-height: 500px;
+}
+.card-featured{
+    background: var(--indigo);
+    color: var(--white);
+    padding: 16px;
+    border-radius: 16px;
+    min-width: 400px;
+    min-height: 500px;
+    display:flex;
+    flex-direction: column;
+}
+.plan{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    padding-bottom: 16px;
+}
+li{
+    display:flex;
+    gap: 8px;
+    font-size:15px;
+}
+.card-featured h3{
+    font-size: 32px;
+    padding: 0px 0px 8px;
+    font-weight: 700;
+}
+.card h3{
+    font-size: 32px;
+    padding: 0px 0px 8px;
+    font-weight: 700;
+}
+hr{
+    margin: 16px 0px;
+}
+ul{
+    padding: 16px 0px;
+}
+.card a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    color: var(--black);
+    font-weight: 600;
+    border: 1px solid var(--indigo);
+    padding: 8px 16px;
+    border-radius:8px;
+    background: var(--black);
+    color: var(--white);
+    transition: background 0.3s, color 0.3s;
+}
+.card a:hover{
+    background: var(--indigo);
+    color: var(--black);
+}
+.card-featured a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    color: var(--indigo);
+    font-weight: 600;
+    border: 1px solid var(--indigo);
+    padding: 8px 16px;
+    border-radius:8px;
+    background: var(--white);
+    transition: background 0.3s, color 0.3s;
+}
+.card-featured a:hover{
+    background: var(--cream);
+    color: var(--black);
 }
