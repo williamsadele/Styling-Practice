@@ -36,6 +36,14 @@ a{
     top:0; left:0; right:0;
     z-index: 1000;
 }
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--indigo);
+}
+.nav-left a{
+    display: flex;
+}
 .nav-left{
     display:flex;
     align-items:center;
@@ -199,7 +207,7 @@ section{
     max-width: 800px;
 }
 .steps-header h2{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--black);
 }
@@ -241,7 +249,7 @@ section{
     gap: 8px;
 }
 .pricing-header h2{
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 800;
     color: var(--black);
     max-width: 600px;
@@ -341,4 +349,47 @@ ul{
 .card-featured a:hover{
     background: var(--cream);
     color: var(--black);
+}
+.features{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 80px 80px;
+}
+.features-text{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+}
+.features-text h2{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--black);
+    max-width: 600px;
+    line-height: 1.1em;
+}
+.features-text p{
+    max-width:600px;
+}
+.features-text a{
+    width: fit-content;
+    margin-top: 16px;
+    font-weight: 600;
+    border: 1px solid var(--indigo);
+    padding: 8px 16px;
+    border-radius:8px;
+    background: var(--black);
+    color: var(--white);
+    transition: background 0.3s, color 0.3s;
+}
+.features-text a:hover{
+    background: var(--indigo);
+    color: var(--black);
+}
+.features-image img{
+    width: 400px;
+    height: 500px;
+    border-radius: 16px;
 }
