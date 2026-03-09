@@ -166,11 +166,8 @@ input{
     background-repeat: no-repeat;
     width: 600px;
     height: 500px;
-
-    border-radius: 32px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    border-radius: 16px;
+    margin: 0px;
 }
 .footer-banner{
     background: var(--off-white);
@@ -392,4 +389,27 @@ ul{
     width: 400px;
     height: 500px;
     border-radius: 16px;
+}
+.foot{
+    background: var(--black);
+    color: var(--white);
+}
+.footer-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 32px;
+}
+.footer-about{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+}
+.footer-nav a{
+    display: block;
+    padding: 4px 0px;
+    color: var(--white);
+    font-weight: 400;
 }
