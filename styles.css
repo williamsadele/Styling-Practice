@@ -36,6 +36,11 @@ a{
     top:0; left:0; right:0;
     z-index: 1000;
 }
+.nav-center{
+    display:flex;
+    align-items:center;
+    gap: 32px;
+}
 .logo{
     font-size: 24px;
     font-weight: 800;
@@ -435,12 +440,38 @@ ul{
 }
 .footer-nav a:hover{
     color: var(--indigo);
-}@media (max-width: 768px) {
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  gap: 4px;
+} /* hidden on desktop */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--black);
+  transition: all 0.3s ease;
+  /* remove margin: 4px 0 */
+}
+
+.hamburger:hover span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-center.open {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   /* note to self: styles here only apply when screen is 768px or smaller */
   .pricing-cards {
     flex-direction: column;
   }
-  .nav-links {
+  .nav-center{
     display: none; /* hide all nav links on mobile */
   }
 
@@ -453,11 +484,22 @@ ul{
   .steps {
     flex-direction: column;
   }
-}
-.hamburger {
-  display: none; /* hidden on desktop */
-}
-.nav-links.open {
-  display: flex;
-  flex-direction: column;
+  .hero-left h1 {
+    font-size: 48px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+  .popular {
+    flex-wrap: wrap;
+  }
+  .footer-banner{
+    flex-direction: column;
+    padding: 16px;
+    width: 100%;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+  }
 }
