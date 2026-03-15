@@ -88,7 +88,7 @@ a{
 .hero-left{
     display:flex;
     flex-direction: column;
-    align-items: flex-start; 
+   
 }
 .hero-left h1{
     font-size: 64px;
@@ -484,22 +484,167 @@ ul{
   .steps {
     flex-direction: column;
   }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers everything horizontally */
+    width: 100%;
+  }
+
   .hero-left h1 {
     font-size: 48px;
+    text-align: center;
+    max-width: 100%; /* remove the 400px limit */
   }
 
   .hero-left p {
-    font-size: 14px;
+    font-size: 16px; /* 20px is too big for mobile */
+    text-align: center;
+    max-width: 100%;
   }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
   .popular {
     flex-wrap: wrap;
+    justify-content: center;
   }
+
+  
   .footer-banner{
     flex-direction: column;
     padding: 16px;
     width: 100%;
-    width: 100%;
     margin: 0px auto;
     text-align: center;
+  }
+  .phone-mockup{
+    display: none;
+  }
+
+  /* NAVBAR */
+  .nav-center {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    padding: 100px 24px 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-left h1 {
+    font-size: 36px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-left p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+  .popular {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .phone-mockup {
+    display: none;
+  }
+  .footer-banner {
+    flex-direction: column;
+    padding: 16px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 40px 24px;
+  }
+
+  /* STEPS */
+  .steps {
+    flex-direction: column;
+  }
+  .steps-header h2 {
+    font-size: 32px;
+  }
+  .step {
+    width: 100%;
+  }
+
+  /* PRICING */
+  .pricing-header h2 {
+    font-size: 32px;
+  }
+  .pricing-cards {
+    flex-direction: column;
+  }
+  .card {
+    min-width: unset;
+    width: 100%;
+  }
+  .card-featured {
+    min-width: unset;
+    width: 100%;
+  }
+
+  /* FEATURES */
+  .features {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+  .features-text {
+    max-width: 100%;
+  }
+  .features-text h2 {
+    font-size: 32px;
+  }
+  .features-image img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .footer-about {
+    max-width: 100%;
+  }
+  .foot hr {
+    margin: 0 24px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 16px 24px;
   }
 }
