@@ -14,6 +14,11 @@
     --ash: #2c2e32;
     --off-white: #f1edff;
     --cream: #aba9bb;
+    --beige: #de7865;
+}
+html, body{
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 body{
     font-family: 'Manrope', sans-serif;
@@ -42,8 +47,9 @@ a{
     gap: 32px;
 }
 .logo{
-    font-size: 24px;
-    font-weight: 800;
+    font-family:cursive;
+    font-size: 28px;
+    font-weight: 600;
     color: var(--ash);
 }
 .nav-left a{
@@ -173,7 +179,7 @@ a{
 }
 .search-bar .material-symbols-outlined{
     color: var(--white);
-    background: var(--indigo);
+    background: var(--beige);
     border-radius:32px;
     padding: 8px;
 }
@@ -797,7 +803,6 @@ body {
   min-height: 100vh;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -810,12 +815,7 @@ body {
   border-bottom: 1px solid var(--off-white);
 }
 
-.logo {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--black);
-  text-decoration: none;
-}
+
 
 .nav-right {
   display: flex;
@@ -849,7 +849,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 32px;
+  padding: 32px 32px;
   margin-top: 64px;
   border-bottom: 1px solid var(--off-white);
 }
@@ -857,9 +857,12 @@ body {
 .filter-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 64px;
 }
-
+.filter-left a{
+  font-size: 16px;
+  font-weight: 600px;
+}
 .filter-tag {
   font-size: 14px;
   font-weight: 500;
