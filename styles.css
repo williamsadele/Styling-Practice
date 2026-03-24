@@ -435,6 +435,9 @@ ul{
 .foot{
     background: var(--black);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-content{
     display:flex;
@@ -794,6 +797,7 @@ ul{
   --white: #ffffff;
   --gray: #555;
   --off-white: #f5f5f5;
+  --ash: #2c2e32;
 }
 
 body {
@@ -844,7 +848,7 @@ body {
   color: var(--black);
 }
 
-/* FILTERS */
+
 .filters {
   display: flex;
   align-items: center;
@@ -906,10 +910,10 @@ body {
   border-color: var(--black);
 }
 
-/* DESIGN GRID */
+
 .design-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 32px;
 }
@@ -925,7 +929,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background: var(--off-white);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
 }
 
 .card-image img {
@@ -942,7 +946,7 @@ body {
   display: flex;
   gap: 8px;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.3s;
 }
 
 .card-image:hover .card-actions {
@@ -950,15 +954,15 @@ body {
 }
 
 .card-action {
-  background: var(--white);
+  background: var(--off-white);
   border-radius: 50%;
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
-  transition: background 0.2s;
+  color: var(--ash);
+  transition: background 0.3s;
 }
 
 .card-action:hover {
@@ -979,7 +983,12 @@ body {
   padding: 16px 32px;
   border-top: 1px solid var(--off-white);
 }
-
+.logo-footer{
+    color: var(--off-white);
+    font-family:cursive;
+    font-size: 28px;
+    font-weight: 600;
+}
 .footer-icons {
   display: flex;
   gap: 16px;
