@@ -220,7 +220,7 @@ input{
     border-radius: 32px;
     color: var(--black);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4px 8px;
 }
 .phone-mockup{
@@ -586,6 +586,9 @@ ul{
 
 .hamburger:hover span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
+}
+.hamburger:hover span:nth-child(2) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 .nav-center.open {
   display: flex;
@@ -1397,6 +1400,10 @@ ul{
     text-align: center;
     padding: 16px 24px;
   }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+  }
     .nav-center.open {
     display: flex;
     flex-direction: column;
@@ -1429,7 +1436,8 @@ ul{
     justify-content: center;
   }
   .popular a {
-   
+    font-size: 12px;
+    padding: 6px 8px;
   }
   .contact-wrapper {
     grid-template-columns: 1fr;
